@@ -247,10 +247,6 @@ aside {
     align-content: end;
     height: 480px;
     width: 552px;
-    /* background-image: url("../images/tile_background.png"); */
-    /* grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr;
-    grid-template-are */
 }
 
 #forestService {
@@ -295,7 +291,6 @@ aside {
 
 .tileWording {
     padding: 0 0 20px 40px;
-    /* height: 25px; */
 }
 
 .contactMe {
