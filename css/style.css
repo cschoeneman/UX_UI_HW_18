@@ -293,6 +293,7 @@ aside {
     padding: 0 0 20px 40px;
 }
 
+/* Contact Me*/
 .contactMe {
     display: flex;
     height: 500px;
@@ -305,6 +306,7 @@ aside {
     color: #245274;
 }
 
+/* Footer */
 .blueFooter {
     background-image: url(../images/footer_background.png);
     height: 90px;
