@@ -52,9 +52,13 @@ li {
     /*height: 771px;*/
     max-width: 1920px;
     background-image: url("../images/hero_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -63,8 +67,9 @@ li {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 5% 5% 5% 5%;
+    padding: 5% 5% 5% 5%; */
     max-height: 765px;
+    
 }
 
 .hero-left h1 {
@@ -84,14 +89,14 @@ li {
     font-style: normal;
     color: white;
     line-height: 1.6;
+    padding-bottom: 0;
+    
 }
 .hero-right {
-
-    position: relative;
+    padding: 5%;
+    /* position: relative;
     float: right;
-    top: 103px;
-    right: 52px;
-    text-align: center;
+    text-align: center; */
 }
 
 .hero-right img {
@@ -168,8 +173,9 @@ aside {
 .skill {
     display: flex;
     flex-direction: row;
-    
-    height: 213px;
+    /* height: 213px; */
+    height: auto;
+    margin: 25px 0;
 }
 
 .skillWording {
@@ -314,24 +320,80 @@ aside {
     display: flex;
     flex-direction: row;
    justify-content: center;
+   align-items: center;
 }
 
 .email {
     font-family: 'K2D', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     padding: 14px 96px 13px 0;
+    display: flex;
+    justify-content: center;
+   align-items: center;
 }
 
 .email img {
-    display: inline-block;
+    padding: 10px;
+    /* display: inline */
 }
 
 .email p {
-    display: inline-block;
+    /* display: inline-block; */
     
 }
 
 #linkedin-footer { 
     padding: 29px 0 29px 0;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 1200px){
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-left {
+        width: 90%;
+        padding-bottom: 0;
+    }  
+    
+
+    
+    #shortcutMenu{
+        display: none;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "forestService"
+            "safeRide"
+            "getGreen"
+            "meetEat";
+    }
+}
+
+@media only screen and (max-width: 975px){
+    ul {
+        margin-right: 15px;
+        margin-left: 50px;
+    }
+    nav {
+        font-size: 20px;
+    }
+    li {
+        margin-right: 50px;
+        margin-top: 10px;
+    }
+
+    .skill {
+        height: auto;
+    }
 }
