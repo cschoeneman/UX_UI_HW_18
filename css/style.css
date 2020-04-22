@@ -192,6 +192,7 @@ aside {
 .resumeButton {
     float: right;
     margin-right: 35px;
+    margin-bottom: 20px;;
     background-color: #33A0D3;
     color: white;
     font-family: 'K2D', sans-serif;
@@ -302,6 +303,7 @@ aside {
 /* Contact Me*/
 .contactMe {
     display: flex;
+    float: right;
     height: 500px;
     width: 83%;
 }
@@ -364,6 +366,20 @@ aside {
     #shortcutMenu{
         display: none;
     }
+    .mySkills {
+        float: none;
+        margin-left: 5%;
+    }
+    
+    .myWork {
+        float: none;
+        margin-left: 5%;
+    }
+
+    .contactMe {
+        float: none;
+        margin-left: 5%;
+    }
 
     .flexContainer {
         flex-direction: column;
@@ -381,6 +397,7 @@ aside {
 }
 
 @media only screen and (max-width: 975px){
+    
     ul {
         margin-right: 15px;
         margin-left: 50px;
@@ -393,7 +410,9 @@ aside {
         margin-top: 10px;
     }
 
-    .skill {
-        height: auto;
+    aside {
+        display: none;
     }
+
+
 }
